@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="Booster.WrappedMethods.cs">
+      <DependentUpon>Booster.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Dataset.WrappedMethods.cs">
+      <DependentUpon>Dataset.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy /y  &quot;$(ProjectDir)\..\packages\LightGBM.2.0.10\lib\*.dll&quot; &quot;$(TargetDir)&quot;" />
+  </Target>
+
+</Project>
