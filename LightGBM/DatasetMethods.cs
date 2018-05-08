@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace LightGBM
+namespace LightGBMSharp
 {
     internal static class DatasetMethods
     {

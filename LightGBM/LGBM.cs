@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Scores = System.Collections.Generic.Dictionary<string, System.Collections.Generic.Dictionary<string, System.Collections.Generic.List<double>>>;
 
-namespace LightGBM
+namespace LightGBMSharp
 {
     public static class LGBM
     {

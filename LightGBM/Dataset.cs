@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Collections.Generic;
 
-namespace LightGBM
+namespace LightGBMSharp
 {
     public partial class Dataset: IDisposable
     {

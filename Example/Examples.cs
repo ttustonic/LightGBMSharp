@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.IO;
 using System.Linq;
-using LightGBM;
+using LightGBMSharp;
 using MathNet.Numerics;
 using Utils;
 
@@ -46,7 +46,7 @@ namespace Examples
 
             var res =
                 new Dictionary<string, Dictionary<string, List<double>>>();
-            var bst = LightGBM.LGBM.Train(est, dsTrain, res, dsEval);
+            var bst = LightGBMSharp.LGBM.Train(est, dsTrain, res, dsEval);
 
             Console.WriteLine("Save model...");
             bst.SaveModel("model.txt");
@@ -89,7 +89,7 @@ namespace Examples
 
             var res = new Dictionary<string, Dictionary<string, List<double>>>();
             string modelString;
-            using (var bst = LightGBM.LGBM.Train(est, dsTrain, res, dsEval))
+            using (var bst = LightGBMSharp.LGBM.Train(est, dsTrain, res, dsEval))
             {
                 Console.WriteLine("Save model...");
                 bst.SaveModel("model.txt");

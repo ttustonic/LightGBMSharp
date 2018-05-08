@@ -3,7 +3,7 @@ using System.Linq;
 using System.Collections.Generic;
 using Scores = System.Collections.Generic.Dictionary<string, System.Collections.Generic.Dictionary<string, System.Collections.Generic.List<double>>>;
 
-namespace LightGBM
+namespace LightGBMSharp
 {
     public class CallbackEnv
     {

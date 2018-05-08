@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace LightGBM
+namespace LightGBMSharp
 {
     public class DefaultDict<TK, TV>: Dictionary<TK, TV> where TV : new()
     {

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LightGBM", "LightGBM\LightGBM.csproj", "{2142E380-7981-4F2C-9213-ED647E4E6CBE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LightGBMSharp", "LightGBM\LightGBMSharp.csproj", "{2142E380-7981-4F2C-9213-ED647E4E6CBE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples", "Example\Examples.csproj", "{33A19F4F-E805-433F-AD95-634C385C8888}"
 EndProject

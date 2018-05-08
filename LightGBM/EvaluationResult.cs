@@ -1,5 +1,5 @@
 ﻿//using EvaluationResult = System.ValueTuple<string, string, double, bool>;
-namespace LightGBM
+namespace LightGBMSharp
 {
     public struct EvaluationResult
     {

@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Reflection;
-using static LightGBM.Constants;
+using static LightGBMSharp.Constants;
 using Scores = System.Collections.Generic.Dictionary<string, System.Collections.Generic.Dictionary<string, System.Collections.Generic.List<double>>>;
 
-namespace LightGBM
+namespace LightGBMSharp
 {
     public abstract class Estimator
     {
@@ -99,7 +99,7 @@ namespace LightGBM
         public int? Verbose { get; set; }
 
         // https://github.com/Microsoft/LightGBM/blob/master/docs/Parameters.rst#metric-parameters
-        Metric[] _metric = {LightGBM.Metric.l2 };
+        Metric[] _metric = { LightGBMSharp.Metric.l2 };
         public Metric[] Metric
         {
             get { return _metric; }
@@ -235,7 +235,7 @@ namespace LightGBM
 
         public Classifier()
         {
-            Metric = new[] { LightGBM.Metric.binary_logloss };
+            Metric = new[] { LightGBMSharp.Metric.binary_logloss };
             Objective = Objective.binary ;
         }
     }
@@ -244,7 +244,7 @@ namespace LightGBM
     {
         public MultiClassifier()
         {
-            Metric = new[] { LightGBM.Metric.multi_logloss };
+            Metric = new[] { LightGBMSharp.Metric.multi_logloss };
             Objective = Objective.multiclass ;
         }
     }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 
 
-namespace LightGBM
+namespace LightGBMSharp
 {
     using static Utils;
     using static DatasetMethods;

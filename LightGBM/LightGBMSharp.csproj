@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Product>LightGBMSharp</Product>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <AssemblyName>LightGBMSharp</AssemblyName>
+    <RootNamespace>LightGBMSharp</RootNamespace>
+    <Version>0.1.0</Version>
+    <Authors>ttustonic</Authors>
   </PropertyGroup>
 
   <ItemGroup>

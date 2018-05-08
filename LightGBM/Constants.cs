@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace LightGBM
+namespace LightGBMSharp
 {
     public enum LGBMDataType
     {

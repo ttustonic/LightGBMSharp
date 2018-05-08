@@ -59,9 +59,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LightGBM\LightGBM.csproj">
+    <ProjectReference Include="..\LightGBM\LightGBMSharp.csproj">
       <Project>{2142e380-7981-4f2c-9213-ed647e4e6cbe}</Project>
-      <Name>LightGBM</Name>
+      <Name>LightGBMSharp</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

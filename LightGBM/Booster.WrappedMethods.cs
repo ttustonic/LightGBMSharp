@@ -1,4 +1,4 @@
-﻿namespace LightGBM
+﻿namespace LightGBMSharp
 {
     using System;
     using System.Collections.Generic;
