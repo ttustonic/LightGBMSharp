@@ -8,7 +8,20 @@
     <RootNamespace>LightGBMSharp</RootNamespace>
     <Version>0.1.0</Version>
     <Authors>ttustonic</Authors>
+    <PackageProjectUrl>https://github.com/ttustonic/LightGBMSharp</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/ttustonic/LightGBMSharp/blob/master/LICENSE</PackageLicenseUrl>
+    <Description>C# binding for the LightGBM</Description>
+    <PackageId>LightGBMSharp</PackageId>
+    <Copyright>Tomislav Tustonic 2018</Copyright>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LightGBM" Version="2.0.10" />
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Update="Booster.WrappedMethods.cs">
