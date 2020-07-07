@@ -201,18 +201,6 @@ namespace Utils
             if (_line.Length != _headers.Length)
                 throw new Exception("Invalid line, headers length doesn't match line length");
             return true;
-            /*
-                        var eos = _file.EndOfStream;
-                        if (eos)
-                            return false;
-                        string l = null;
-
-                        while ( !_file.EndOfStream && (l = _file.ReadLine()).StartsWith(_comment)) ;
-                        if (_file.EndOfStream)
-                            return false;
-                        _line = l.Split(_delimiter);
-                        return true;
-            */
         }
 
         public int RecordsAffected
@@ -267,7 +255,6 @@ namespace Utils
 
         public string GetDataTypeName(int i)
         {
-            //            throw new NotImplementedException();
             return _columnTypes[i].FullName;
         }
 
@@ -365,7 +352,6 @@ namespace Utils
 
         public object this[string name]
         {
-            //			get { return _line[GetOrdinal(name)]; }
             get { return GetValue( GetOrdinal(name) ); }
         }
 

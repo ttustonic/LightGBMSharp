@@ -55,7 +55,6 @@ namespace LightGBMSharp
 
         public static T[,] TrimArray<T>(int rowToRemove, int columnToRemove, T[,] originalArray)
         {
-            //            T[,] result = new T[originalArray.GetLength(0) - 1, originalArray.GetLength(1) - 1];
             T[,] result = new T[originalArray.GetLength(0), originalArray.GetLength(1) - 1];
 
             for (int i = 0, j = 0; i < originalArray.GetLength(0); i++)

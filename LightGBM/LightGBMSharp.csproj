@@ -28,7 +28,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="LightGBM" Version="2.0.10" />
+    <PackageReference Include="LightGBM" Version="2.3.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -39,9 +39,5 @@
       <DependentUpon>Dataset.cs</DependentUpon>
     </Compile>
   </ItemGroup>
-
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="xcopy /y  &quot;$(ProjectDir)\..\packages\LightGBM.2.0.10\lib\*.dll&quot; &quot;$(TargetDir)&quot;" />
-  </Target>
 
 </Project>

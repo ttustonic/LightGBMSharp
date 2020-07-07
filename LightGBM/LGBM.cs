@@ -24,9 +24,8 @@ namespace LightGBMSharp
             {
                 for (int testNdx = 0; testNdx < validationSets.Length; testNdx++)
                 {
-                    // u engine.py train metodi imam i parametar valid_names, ovdje generiram validation names.
                     var testName = $"Test_{testNdx}";
-                    // ovo je: booster.add_valid(valid_set, name_valid_set)
+                    // booster.add_valid(valid_set, name_valid_set)
                     booster.AddValidData(validationSets[testNdx], testName);
                 }
             }

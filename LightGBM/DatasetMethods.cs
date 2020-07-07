@@ -113,13 +113,7 @@ namespace LightGBMSharp
         public static extern int LGBM_DatasetSetFeatureNames(DatasetHandle handle, IntPtr feature_names, int num_feature_names);
         [DllImport("lib_lightgbm.dll", EntryPoint = "LGBM_DatasetSetFeatureNames")]
         public static extern int LGBM_DatasetSetFeatureNames(DatasetHandle handle, SafeCharPp feature_names, int num_feature_names);
-        /* Ne dela
-                [DllImport("lib_lightgbm.dll", EntryPoint = "LGBM_DatasetSetFeatureNames")]
-                public static extern int LGBM_DatasetSetFeatureNames(DatasetHandle handle,
-                    [In, MarshalAs(UnmanagedType.LPArray, ArraySubType=UnmanagedType.LPStr) ]
-                    string[] feature_names, 
-                    int num_feature_names);
-        */
+
         /// Return Type: int
         ///handle: DatasetHandle->void*
         ///feature_names: char**
@@ -128,13 +122,6 @@ namespace LightGBMSharp
         public static extern int LGBM_DatasetGetFeatureNames(DatasetHandle handle, IntPtr feature_names, out int num_feature_names);
         [DllImport("lib_lightgbm.dll", EntryPoint = "LGBM_DatasetGetFeatureNames")]
         public static extern int LGBM_DatasetGetFeatureNames(DatasetHandle handle, SafeCharPp feature_names, out int num_feature_names);
-        /* Ovo ne radi
-                    [DllImport("lib_lightgbm.dll", EntryPoint = "LGBM_DatasetGetFeatureNames")]
-                    public static extern int LGBM_DatasetGetFeatureNames(DatasetHandle handle,
-                        [MarshalAs(UnmanagedType.LPArray, ArraySubType=UnmanagedType.LPStr, SizeParamIndex =2) ]
-                    string[] feature_names,
-                        ref int num_feature_names);
-        */
 
         /// Return Type: int
         ///handle: DatasetHandle->void*

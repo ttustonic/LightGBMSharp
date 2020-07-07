@@ -65,12 +65,6 @@ namespace Utils
             if (numColss > 1)
                 throw new ArgumentException("Must be a single column datatable");
             var ret = table.Rows.Cast<DataRow>().Select(r => GetRowField<T>(r, 0)).ToArray();
-            //for (var rowNdx = 0; rowNdx < numRowss; rowNdx++)
-            //{
-            //    var row = table.Rows[rowNdx];
-            //    var val = row.Field<T>(0);
-            //    ret[rowNdx] = val;
-            //}
             return ret;
         }
 
@@ -87,7 +81,6 @@ namespace Utils
             }
             catch (InvalidCastException)
             {
-                // Zakaj je ovo tak sporo kad je u DEBUG modu ???
                 var rowVal = row[i];
                 return (T)Convert.ChangeType(rowVal, typeof (T));
             }
@@ -121,7 +114,6 @@ namespace Utils
                 TD[] dataVals = new TD[numColss - 1];
                 label[rowNdx] = GetRowField<TL>(row, labelNdx);
                 int skip = 0;
-                //                for (int i = 0; i < rowValues.Length; i++)
                 for (int i = 0; i < numColss; i++)
                 {
                     if (i == labelNdx)
@@ -129,8 +121,6 @@ namespace Utils
                         skip = 1;
                         continue;
                     }
-
-                    //                    dataVals[i-skip] = (TD)Convert.ChangeType(rowValues[i], typeof(TD));
                     dataVals[i - skip] = GetRowField<TD>(row, i);
                 }
 

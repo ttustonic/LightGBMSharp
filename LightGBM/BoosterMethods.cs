@@ -87,9 +87,6 @@ namespace LightGBMSharp
         [DllImport("lib_lightgbm.dll", EntryPoint = "LGBM_BoosterGetEvalNames")]
         public static extern int LGBM_BoosterGetEvalNames(BoosterHandle handle, out int out_len, IntPtr out_strs);
 
-        //[DllImport("lib_lightgbm.dll", EntryPoint = "LGBM_BoosterGetEvalNames")]
-        //public static extern int LGBM_BoosterGetEvalNames(BoosterHandle handle, out int out_len, SafeCharPp out_strs);
-
         /// Return Type: int
         ///handle: BoosterHandle->void*
         ///out_len: int*
